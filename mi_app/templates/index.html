@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing</title>
+</head>
+<body>
+        <form action="/mi_app/predecir/" enctype="multipart/form-data" method="POST">
+            {% csrf_token %}
+            <label>Seleccione el archivo:</label><br>
+            <input name="elm_imagen" type="file"><br>
+            <input type="submit" value="Predecir Imagen">
+        </form>
+</body>
+</html>
